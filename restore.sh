@@ -46,14 +46,14 @@ updatedotfile .shellaliases
 updatedotfile .shellfn
 updatedotfile .shellpaths
 updatedotfile .shellvars
-updatedotfile .vim
-updatedotfile .vim/autoload
-updatedotfile .vim/backup
-updatedotfile .vim/bundle
-updatedotfile .vim/colors
-updatedotfile .vim/temp
-updatedotfile .vim/.netrwhist
-updatedotfile .vimrc
+# updatedotfile .vim
+# updatedotfile .vim/autoload
+# updatedotfile .vim/backup
+# updatedotfile .vim/bundle
+# updatedotfile .vim/colors
+# updatedotfile .vim/temp
+# updatedotfile .vim/.netrwhist
+# updatedotfile .vimrc
 updatedotfile .zlogout
 updatedotfile .zprofile
 updatedotfile .zshenv
