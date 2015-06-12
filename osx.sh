@@ -84,45 +84,45 @@ require_brew ack
 # launchctl load ~/Library/LaunchAgents/homebrew.mxcl.beanstalk.plist
 
 # docker setup:
-require_brew fig
-require_brew docker
-require_brew boot2docker
+#require_brew fig
+#require_brew docker
+#require_brew boot2docker
 
 # dos2unix converts windows newlines to unix newlines
-require_brew dos2unix
+#require_brew dos2unix
 # fortune command--I source this as a better motd :)
-require_brew fortune
-require_brew gawk
+#require_brew fortune
+#require_brew gawk
 # http://www.lcdf.org/gifsicle/ (because I'm a gif junky)
-require_brew gifsicle
+#require_brew gifsicle
 # skip those GUI clients, git command-line all the way
 require_brew git
 # yes, yes, use git-flow, please :)
-require_brew git-flow
+#require_brew git-flow
 # why is everyone still not using GPG?
-require_brew gnupg
+#require_brew gnupg
 # Install GNU `sed`, overwriting the built-in `sed`
 # so we can do "sed -i 's/foo/bar/' file" instead of "sed -i '' 's/foo/bar/' file"
 require_brew gnu-sed --default-names
-require_brew go
+#require_brew go
 # better, more recent grep
 require_brew homebrew/dupes/grep
 require_brew hub
 require_brew imagemagick
 require_brew imagesnap
 # jq is a JSON grep
-require_brew jq
+#require_brew jq
 # http://maven.apache.org/
-require_brew maven
-require_brew memcached
-require_brew nmap
-require_brew node
-require_brew redis
+#require_brew maven
+#require_brew memcached
+#require_brew nmap
+#require_brew node
+#require_brew redis
 # better/more recent version of screen
-require_brew homebrew/dupes/screen
-require_brew tig
-require_brew tree
-require_brew ttyrec
+#require_brew homebrew/dupes/screen
+#require_brew tig
+#require_brew tree
+#require_brew ttyrec
 # better, more recent vim
 require_brew vim --override-system-vi
 require_brew watch
@@ -140,56 +140,35 @@ echo "launchctl load ~/Library/LaunchAgents/homebrew.mxcl.memcached.plist"
 bot "installing GUI tools via homebrew casks..."
 brew tap caskroom/versions > /dev/null 2>&1
 
-# cloud storage
-#require_cask amazon-cloud-drive
-require_cask box-sync
-#require_cask dropbox
-#require_cask evernote
-#require_cask skydrive
-
-# communication
-#require_cask adium
-require_cask slack
-
-require_cask caffeine
-
-# tools
-#require_cask comicbooklover
-require_cask diffmerge
-#require_cask flash-player
-require_cask github
-require_cask gpgtools
-require_cask ireadfast
-require_cask iterm2
-#require_cask macvim
-require_cask sizeup
-#require_cask simple-comic
-#require_cask sketchup
-
-require_cask atom
-apm install linter
-apm install linter-eslint
-apm install atom-beautify
-
-require_cask the-unarchiver
-#require_cask transmission
-require_cask vlc
-require_cask xquartz
-
-# development browsers
-require_cask breach
+require_cask bartender
+require_cask bettertouchtool
+require_cask boom
+require_cask calibre
+require_cask controlplane
+require_cask dropbox
 require_cask firefox
-#require_cask firefox-aurora
+require_cask gfxcardstatus
+require_cask github
 require_cask google-chrome
-require_cask google-chrome-canary
-require_cask torbrowser
-
-# virtal machines
-require_cask virtualbox
-# chef-dk, berkshelf, etc
-#require_cask chefdk
-# vagrant for running dev environments using docker images
-#require_cask vagrant # # | grep Caskroom | sed "s/.*'\(.*\)'.*/open \1\/Vagrant.pkg/g" | sh
+require_cask istat-menus
+require_cask iterm2
+require_cask jdownloader
+require_cask launchbar
+require_cask little-snitch
+require_cask nvalt
+require_cask omnigraffle
+require_cask perian
+require_cask rescuetime
+require_cask scrivener
+require_cask slack
+require_cask skype
+require_cask textexpander
+require_cask the-unarchiver
+require_cask trim-enabler
+require_cask unrarx
+require_cask vlc
+require_cask whatpulse
+require_cask xquartz
 
 bot "Alright, cleaning up homebrew cache..."
 # Remove outdated versions from the cellar
