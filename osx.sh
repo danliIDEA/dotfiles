@@ -12,16 +12,6 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
 bot "OK, let's roll..."
 
-bot "Do you want me to setup this machine to allow you to run sudo without a password?\n Please read here to see what I am doing: http://wiki.summercode.com/sudo_without_a_password_in_mac_os_x \n"
-
-read -r -p "Make sudo passwordless? [y|N] " response
-
-if [[ $response =~ ^(yes|y|Y) ]];then
-    sudo sed -i 's/^#\s*\(%wheel\s\+ALL=(ALL)\s\+NOPASSWD:\s\+ALL\)/\1/' /etc/sudoers
-    sudo dscl . append /Groups/wheel GroupMembership $(whoami)
-    bot "You can now run sudo commands without password!"
-fi
-
 #####
 # install homebrew
 #####
